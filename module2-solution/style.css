@@ -12,7 +12,7 @@ body {
 
 .content-title {
     margin: 0px;
-    border: 3px solid black;
+    border: 1px solid black;
     font-size: 1.5em;
     text-align: center;
     color: rgb(29, 24, 24);
@@ -24,25 +24,26 @@ body {
     box-sizing: border-box;
 }
 
-#title-chicken {
-    background-color: khaki;
+#title-leon {
+    background-color: rgb(240, 140, 140);
 }
 
-#title-beef {
-    color: white;
-    background-color: indianred;
+#title-split {
+    color: rgb(0, 0, 0);
+    background-color: rgb(178, 237, 252);
 }
 
-#title-sushi {
+#title-truman {
     background-color: lightgreen;
+    font-size: 20px;
+    width: 50%;
 }
 
 .content {
     margin: 20px;
     padding: 10px;
-    background-color: rgb(155, 154, 154);
-    border: 3px solid black;
-    width: 30%;
+    background-color: rgb(230, 225, 168);
+    border: 1.5px solid black;
     height: 180px;
     box-sizing: border-box;
     overflow: hidden;
@@ -50,26 +51,30 @@ body {
     position: relative;
 }
 
+
 .text {
     font-size: 18px;
     margin-top: 20px;
 }
 
 
+
 @media (min-width: 992px) {
-    .content {
-        width: 30%;
+    #leon-content, #split-content, #truman-content {
+        width: 28%;
     }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .content {
+    #leon-content, #split-content {
         width: 40%;
+        height: 210px;
     }
 
-    #sushi-content {
+    #truman-content {
         width: 90%;
+        height: 250px;
     }
 
 }
@@ -77,5 +82,7 @@ body {
 @media (max-width: 767px) {
     .content {
         width: 90%;
+        height: 150px;
     }
+
 }
